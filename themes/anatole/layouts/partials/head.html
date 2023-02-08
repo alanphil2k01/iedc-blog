@@ -26,28 +26,33 @@
 
   <meta name="title" content="IEDC MEC Blogs">
   {{- hugo.Generator -}}
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="{{ .Site.Params.author }}" />
   <meta
     name="description"
     content="{{ if .Params.description }}
       {{- .Params.description -}}
-    {{ else }}develop | nurture | sustain
+
+
+    {{ else }}
+      {{- .Site.Params.description -}}
+
+
     {{ end }}"
   />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://iedc-blog-git-meta-test-alanphil2k01.vercel.app/">
-<meta property="og:title" content="IEDC MEC Blogs">
-<meta property="og:description" content="develop | nurture | sustain">
-<meta property="og:image" content="https://iedc-blog-git-meta-test-alanphil2k01.vercel.app//images/global/site-feature-image.png">
+<meta property="og:url" content="{{- absURL "/" -}}">
+<meta property="og:title" content="{{- .Site.Params.meta.title -}}">
+<meta property="og:description" content="{{- .Site.Params.meta.description -}}">
+<meta property="og:image" content="{{- absURL "/images/global/site-feature-image.png" -}}">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://iedc-blog-git-meta-test-alanphil2k01.vercel.app/">
-<meta property="twitter:title" content="IEDC MEC Blogs">
-<meta property="twitter:description" content="develop | nurture | sustain">
+<meta property="twitter:title" content="{{- .Site.Params.meta.title -}}">
+<meta property="twitter:description" content="{{- .Site.Params.meta.description -}}">
 <meta property="twitter:image" content="https://iedc-blog-git-meta-test-alanphil2k01.vercel.app//images/global/site-feature-image.png">
 
   {{ if .Params.redirectUrl }}
