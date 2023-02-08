@@ -24,33 +24,20 @@
   <!-- Meta -->
   <meta charset="utf-8" />
 
+  <meta name="title" content="IEDC MEC Blogs">
   {{- hugo.Generator -}}
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="author" content="{{ .Site.Params.author }}" />
-  <!-- <meta -->
-  <!--   name="description" -->
-  <!--   content="{{ if .Params.description }} -->
-  <!--     {{- .Params.description -}} -->
-  <!---->
-  <!---->
-  <!--   {{ else }} -->
-  <!--     {{- .Site.Params.description -}} -->
-  <!---->
-  <!---->
-  <!--   {{ end }}" -->
-  <!-- /> -->
-  {{ if .Params.redirectUrl }}
-    <meta http-equiv="refresh" content="1; url={{ .Params.redirectUrl }}" />
+  <meta
+    name="description"
+    content="{{ if .Params.description }}
+      {{- .Params.description -}}
 
-  {{ end }}
-  {{- if .Site.Params.googleSiteVerify }}
-    <meta name="google-site-verification" content="{{ .Site.Params.googleSiteVerify }}" />
+    {{ else }}
+      develop | nurture | sustain
 
-  {{- end -}}
-
-<!-- Primary Meta Tags -->
-<meta name="title" content="IEDC MEC Blogs">
-<meta name="description" content="develop | nurture | sustain">
+    {{ end }}"
+  />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
@@ -65,6 +52,16 @@
 <meta property="twitter:title" content="IEDC MEC Blogs">
 <meta property="twitter:description" content="develop | nurture | sustain">
 <meta property="twitter:image" content="/images/global/site-feature-image.png">
+
+  {{ if .Params.redirectUrl }}
+    <meta http-equiv="refresh" content="1; url={{ .Params.redirectUrl }}" />
+
+  {{ end }}
+  {{- if .Site.Params.googleSiteVerify }}
+    <meta name="google-site-verification" content="{{ .Site.Params.googleSiteVerify }}" />
+
+  {{- end -}}
+
 
   <!-- CSS -->
   {{ if eq .Site.Language.LanguageDirection "rtl" }}
