@@ -36,8 +36,9 @@ reversepagetitle = true # When set to 'true', the Window Title will be reversed 
 # hidesidebar = true
 
 [meta]
-title = "asdfasdfasdf"
-description = "zxcvzxvcvzxczxcv"
+title = "IEDC Blog"
+description = "develop | nurture | sustain"
+URL = "https://iedc-blog-git-meta-test-alanphil2k01.vercel.app"
 
 [simpleAnalytics]
 # enable = true
