@@ -47,6 +47,24 @@
 
   {{- end -}}
 
+  <!-- Primary Meta Tags -->
+<title>IEDC MEC Blog | IEDC</title>
+<meta name="title" content="IEDC MEC Blog | IEDC">
+<meta name="description" content="develop | nurture | sustain">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://blog.iedcmec.in/">
+<meta property="og:title" content="develop | nurture | sustain">
+<meta property="og:description" content="IEDC blog site">
+<meta property="og:image" content="/images/global/site-feature-image.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://blog.iedcmec.in/">
+<meta property="twitter:title" content="IEDC MEC Blog | IEDC">
+<meta property="twitter:description" content="IEDC blog site">
+<meta property="twitter:image" content="/images/site-feature-image.png">
 
   <!-- CSS -->
   {{ if eq .Site.Language.LanguageDirection "rtl" }}
@@ -55,7 +73,6 @@
     <link
       rel="stylesheet"
       href="{{ $style.RelPermalink }}"
-      integrity="{{ $style.Data.Integrity }}"
       crossorigin="anonymous"
       type="text/css"
     />
@@ -66,7 +83,6 @@
     <link
       rel="stylesheet"
       href="{{ $style.RelPermalink }}"
-      integrity="{{ $style.Data.Integrity }}"
       crossorigin="anonymous"
       type="text/css"
     />
@@ -77,7 +93,6 @@
   <link
     rel="stylesheet"
     href="{{ $markupHighlightStyle.RelPermalink }}"
-    integrity="{{ $markupHighlightStyle.Data.Integrity }}"
     crossorigin="anonymous"
     type="text/css"
   />
@@ -87,7 +102,6 @@
     <link
       rel="stylesheet"
       href="{{ $styles.RelPermalink }}"
-      integrity="{{ $styles.Data.Integrity }}"
       crossorigin="anonymous"
       media="screen"
     />
@@ -97,7 +111,6 @@
   <link
     rel="stylesheet"
     href="{{ $style.RelPermalink }}"
-    integrity="{{ $style.Data.Integrity }}"
     crossorigin="anonymous"
     type="text/css"
   />
@@ -105,7 +118,6 @@
   <link
     rel="stylesheet"
     href="{{ $style.RelPermalink }}"
-    integrity="{{ $style.Data.Integrity }}"
     crossorigin="anonymous"
     type="text/css"
   />
@@ -113,7 +125,6 @@
   <link
     rel="stylesheet"
     href="{{ $style.RelPermalink }}"
-    integrity="{{ $style.Data.Integrity }}"
     crossorigin="anonymous"
     type="text/css"
   />
@@ -121,7 +132,6 @@
   <link
     rel="stylesheet"
     href="{{ $style.RelPermalink }}"
-    integrity="{{ $style.Data.Integrity }}"
     crossorigin="anonymous"
     type="text/css"
   />
@@ -130,7 +140,6 @@
     <link
       rel="stylesheet"
       href="{{ $style.RelPermalink }}"
-      integrity="{{ $style.Data.Integrity }}"
       crossorigin="anonymous"
       type="text/css"
     />
@@ -169,7 +178,6 @@
   <script
     type="text/javascript"
     src="{{ $secureHeaderJS.RelPermalink }}"
-    integrity="{{ $secureHeaderJS.Data.Integrity }}"
     crossorigin="anonymous"
   ></script>
 
@@ -179,7 +187,6 @@
     <script
       type="text/javascript"
       src="{{ $secureThemeSwitcherJS.RelPermalink }}"
-      integrity="{{ $secureThemeSwitcherJS.Data.Integrity }}"
       crossorigin="anonymous"
     ></script>
 
@@ -217,7 +224,6 @@
     <script
       type="text/javascript"
       src="{{ $secureJS.RelPermalink }}"
-      integrity="{{ $secureJS.Data.Integrity }}"
       crossorigin="anonymous"
     ></script>
 
