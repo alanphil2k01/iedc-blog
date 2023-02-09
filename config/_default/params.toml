@@ -39,6 +39,7 @@ reversepagetitle = true # When set to 'true', the Window Title will be reversed 
 title = "IEDCMEC blog"
 description = "The official blog of the Innovation and Entrepreneurship Development Cell(IEDC) of Govt. Model Engineering college, Kochi."
 metaURL = "https://iedc-blog-git-meta-test-alanphil2k01.vercel.app"
+metaImgURL = "https://iedc-blog-git-meta-test-alanphil2k01.vercel.app/images/global/site-feature-image.png"
 
 [simpleAnalytics]
 # enable = true

@@ -36,7 +36,7 @@
 
 
     {{ else }}
-      {{- .Site.Params.description -}}
+      {{- .Site.Params.meta.description -}}
 
 
     {{ end }}"
@@ -46,15 +46,15 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{- .Site.Params.meta.title -}}">
 <meta property="og:description" content="{{- .Site.Params.meta.description -}}">
-<meta property="og:url" content="{{- .Site.Params.meta.URL -}}">
-<meta property="og:image" content="https://avatars.githubusercontent.com/u/62133737?v=4?s=400">
+<meta property="og:url" content="{{- .Site.Params.meta.metaURL -}}">
+<meta property="og:image" content="{{- .Site.Params.meta.metaImgURL -}}">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:title" content="{{- .Site.Params.meta.title -}}">
 <meta property="twitter:description" content="{{- .Site.Params.meta.description -}}">
-<meta property="twitter:url" content="{{- .Site.Params.meta.URL -}}">
-<meta property="twitter:image" content="https://avatars.githubusercontent.com/u/62133737?v=4?s=400">
+<meta property="twitter:url" content="{{- .Site.Params.meta.metaURL -}}">
+<meta property="twitter:image" content="{{- .Site.Params.meta.metaImgURL -}}">
 
   {{ if .Params.redirectUrl }}
     <meta http-equiv="refresh" content="1; url={{ .Params.redirectUrl }}" />
